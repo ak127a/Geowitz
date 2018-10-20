@@ -145,6 +145,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 return;
             }
             googleMap.setMyLocationEnabled(true);
+
+            googleMap.setOnMapLongClickListener(new GoogleMap.OnMapLongClickListener() {
+                @Override
+                public void onMapLongClick(LatLng latLng) {
+                    mMap.addMarker(new MarkerOptions().position(latLng).title("new marker"));
+                }
+            });
         }
 
 
