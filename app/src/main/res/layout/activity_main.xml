@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:layout_margin="15dp"
+        android:id="@+id/set_alarm_button"
+        android:background="@drawable/button_border"
+        android:textAllCaps="false"
+        android:textSize="28sp"
+        android:text="Set Alarm"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reminder_button"
+        android:background="@drawable/button_border"
+        android:layout_margin="15dp"
+        android:textAllCaps="false"
+        android:layout_below="@+id/set_alarm_button"
+        android:textSize="28sp"
+        android:padding="6dp"
+        android:text="Reminder"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_border"
+        android:id="@+id/restrict_usage_button"
+        android:layout_below="@+id/reminder_button"
+        android:layout_margin="15dp"
+        android:textAllCaps="false"
+        android:textSize="28sp"
+        android:padding="6dp"
+        android:text="Restrict Usage"/>
+
+
+</RelativeLayout>
